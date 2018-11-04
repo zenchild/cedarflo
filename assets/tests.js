@@ -217,13 +217,31 @@ define('cedarflo/tests/routes/sale.jshint.lint-test', ['exports'], function (exp
     assert.ok(true, 'routes/sale.js should pass jshint.');
   });
 });
-define('cedarflo/tests/routes/welcome.jshint.lint-test', ['exports'], function (exports) {
+define('cedarflo/tests/routes/sale/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 
-  QUnit.module('JSHint | routes/welcome.js');
+  QUnit.module('JSHint | routes/sale/index.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/welcome.js should pass jshint.');
+    assert.ok(true, 'routes/sale/index.js should pass jshint.');
+  });
+});
+define('cedarflo/tests/routes/sale/welcome.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/sale/welcome.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/sale/welcome.js should pass jshint.');
+  });
+});
+define('cedarflo/tests/routes/sale/wintering.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/sale/wintering.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/sale/wintering.js should pass jshint.');
   });
 });
 define('cedarflo/tests/test-helper', ['exports', 'cedarflo/tests/helpers/resolver', 'ember-qunit'], function (exports, _cedarfloTestsHelpersResolver, _emberQunit) {

@@ -217,6 +217,15 @@ define('cedarflo/tests/routes/sale.jshint.lint-test', ['exports'], function (exp
     assert.ok(true, 'routes/sale.js should pass jshint.');
   });
 });
+define('cedarflo/tests/routes/sale/dispersion-photos.jshint.lint-test', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | routes/sale/dispersion-photos.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/sale/dispersion-photos.js should pass jshint.');
+  });
+});
 define('cedarflo/tests/routes/sale/index.jshint.lint-test', ['exports'], function (exports) {
   'use strict';
 

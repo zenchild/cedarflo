@@ -346,6 +346,129 @@ define("cedarflo/routes/photos", ["exports", "ember"], function (exports, _ember
 define('cedarflo/routes/sale', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Route.extend({});
 });
+define("cedarflo/routes/sale/dispersion-photos", ["exports", "ember"], function (exports, _ember) {
+
+  var photos = [{
+    url: "/assets/dispersion-photos/42.jpg",
+    caption: "Tag #42"
+  }, {
+    url: "/assets/dispersion-photos/47.jpg",
+    caption: "Tag #47"
+  }, {
+    url: "/assets/dispersion-photos/76.jpg",
+    caption: "Tag #76"
+  }, {
+    url: "/assets/dispersion-photos/80.jpg",
+    caption: "Tag #80"
+  }, {
+    url: "/assets/dispersion-photos/107.jpg",
+    caption: "Tag #107"
+  }, {
+    url: "/assets/dispersion-photos/113.jpg",
+    caption: "Tag #113"
+  }, {
+    url: "/assets/dispersion-photos/120.jpg",
+    caption: "Tag #120"
+  }, {
+    url: "/assets/dispersion-photos/137.jpg",
+    caption: "Tag #137"
+  }, {
+    url: "/assets/dispersion-photos/163.jpg",
+    caption: "Tag #163"
+  }, {
+    url: "/assets/dispersion-photos/187.jpg",
+    caption: "Tag #187"
+  }, {
+    url: "/assets/dispersion-photos/234.jpg",
+    caption: "Tag #234"
+  }, {
+    url: "/assets/dispersion-photos/294.jpg",
+    caption: "Tag #294"
+  }, {
+    url: "/assets/dispersion-photos/326.jpg",
+    caption: "Tag #326"
+  }, {
+    url: "/assets/dispersion-photos/337.jpg",
+    caption: "Tag #337"
+  }, {
+    url: "/assets/dispersion-photos/379.jpg",
+    caption: "Tag #379"
+  }, {
+    url: "/assets/dispersion-photos/403.jpg",
+    caption: "Tag #403"
+  }, {
+    url: "/assets/dispersion-photos/403-2.jpg",
+    caption: "Tag #403-2"
+  }, {
+    url: "/assets/dispersion-photos/439.jpg",
+    caption: "Tag #439"
+  }, {
+    url: "/assets/dispersion-photos/446.jpg",
+    caption: "Tag #446"
+  }, {
+    url: "/assets/dispersion-photos/460.jpg",
+    caption: "Tag #460"
+  }, {
+    url: "/assets/dispersion-photos/463.jpg",
+    caption: "Tag #463"
+  }, {
+    url: "/assets/dispersion-photos/497.jpg",
+    caption: "Tag #497"
+  }, {
+    url: "/assets/dispersion-photos/514.jpg",
+    caption: "Tag #514"
+  }, {
+    url: "/assets/dispersion-photos/527.jpg",
+    caption: "Tag #527"
+  }, {
+    url: "/assets/dispersion-photos/537.jpg",
+    caption: "Tag #537"
+  }, {
+    url: "/assets/dispersion-photos/542.jpg",
+    caption: "Tag #542"
+  }, {
+    url: "/assets/dispersion-photos/582.jpg",
+    caption: "Tag #582"
+  }, {
+    url: "/assets/dispersion-photos/599.jpg",
+    caption: "Tag #599"
+  }, {
+    url: "/assets/dispersion-photos/600.jpg",
+    caption: "Tag #600"
+  }, {
+    url: "/assets/dispersion-photos/604.jpg",
+    caption: "Tag #604"
+  }, {
+    url: "/assets/dispersion-photos/617.jpg",
+    caption: "Tag #617"
+  }, {
+    url: "/assets/dispersion-photos/654.jpg",
+    caption: "Tag #654"
+  }, {
+    url: "/assets/dispersion-photos/721.jpg",
+    caption: "Tag #721"
+  }, {
+    url: "/assets/dispersion-photos/865.jpg",
+    caption: "Tag #865"
+  }, {
+    url: "/assets/dispersion-photos/905.jpg",
+    caption: "Tag #905"
+  }, {
+    url: "/assets/dispersion-photos/1106.jpg",
+    caption: "Tag #1106"
+  }, {
+    url: "/assets/dispersion-photos/1406.jpg",
+    caption: "Tag #1406"
+  }];
+
+  exports["default"] = _ember["default"].Route.extend({
+
+    model: function model() {
+      return photos;
+    }
+
+  });
+});
 define('cedarflo/routes/sale/index', ['exports', 'ember'], function (exports, _ember) {
   exports['default'] = _ember['default'].Route.extend({});
 });
@@ -435,7 +558,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("cedarflo/app")["default"].create({"name":"cedarflo","version":"0.0.0+ede4423c"});
+  require("cedarflo/app")["default"].create({"name":"cedarflo","version":"0.0.0+bf19f60b"});
 }
 
 /* jshint ignore:end */
